@@ -1,4 +1,4 @@
-OpenCPU App: R-MQS
+OpenCPU App: RMQS
 -------------------
 
 Simple OpenCPU Application. To install in R:
@@ -9,7 +9,7 @@ Simple OpenCPU Application. To install in R:
 
     #load the app
     library(opencpu)
-    opencpu$browse("library/R-MQS")
+    opencpu$browse("library/RMQS")
 
 Use the same function locally:
 
