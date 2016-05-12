@@ -1,15 +1,15 @@
-OpenCPU App: Stocks
+OpenCPU App: R-MQS
 -------------------
 
 Simple OpenCPU Application. To install in R:
 
     library(devtools)
-    install_github("opencpu", "jeroenooms")
+    
     install_github("defcom74/R-MQS")
 
     #load the app
     library(opencpu)
-    opencpu$browse("library/stocks/www")
+    opencpu$browse("library/R-MQS")
 
 Use the same function locally:
 
