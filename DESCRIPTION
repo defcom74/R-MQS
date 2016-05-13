@@ -11,4 +11,5 @@ License: GPL
 LazyData: yes
 Imports:
     ggplot2
+	qualityTools
 Suggests: opencpu (>= 1.2)
