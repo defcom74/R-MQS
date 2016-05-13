@@ -12,5 +12,4 @@ LazyData: yes
 Depends: qualityTools
 Imports:
     ggplot2
-	
 Suggests: opencpu (>= 1.2)
