@@ -3,7 +3,7 @@ cpkHistogram <- function(myData, LowLimit, HiLimit, sTitle, specCol = "red"){
   par(bg="white");
   
   
-  xLim <- range(myData);
+  xLim <- range(myData, HiLimit, LowLimit);
   xLim <- xLim + diff(xLim) * c(-0.2, 0.2);
   xFit <- seq(min(xLim), max(xLim), length = 200);
   yFit <- dnorm(xFit, mean = mean(myData), sd = sd(myData));
@@ -24,5 +24,6 @@ cpkHistogram <- function(myData, LowLimit, HiLimit, sTitle, specCol = "red"){
     axis(side = 3, at = HiLimit, labels = paste("USL = ", HiLimit), col= specCol, cex.axis = 0.6 );
     
   }
-  
+  qqPlot(myData, "normal", confbounds = TRUE, 0.5, main = "", xlab = "", ylab = "",  
+               border = "red", bounds.col = "red", bounds.lty = 3)
 }
