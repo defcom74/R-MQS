@@ -1,11 +1,11 @@
-Package: R-MQS
+Package: RMQS
 Type: Package
-Title: R-MQS Web Application
+Title: RMQS Web Application
 Version: 1.0
 Date: 2016-05-12
-Author: Jeroen
-Maintainer: Jeroen <jeroen.ooms@stat.ucla.edu>
-Description: An OpenCPU Application to make charts of historical stock data
+Author: Cesar Payan
+Maintainer: cpayan <cpayan@hotmail.com>
+Description: An OpenCPU Application to make charts of historical  data
     from Yahoo Finance.
 License: GPL
 LazyData: yes
