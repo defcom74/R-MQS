@@ -10,7 +10,7 @@ cpkHistogram <- function(myData, LowLimit, HiLimit, sTitle, specCol = "red"){
   yLim <- range(objHist$density);
   yLim <- yLim + diff(yLim) * c(-0.1,   0.3);
   
-  hist(myData, xlim = xLim, ylim = yLim  main = paste( sTitle) , col="lightblue",  
+  hist(myData, xlim = xLim, ylim = yLim,  main = paste( sTitle) , col="lightblue",  
        xlab= "", ylab="");
   lines(xFit, yFit, col = "blue", lwd = 2);
   abline(v = LowLimit, col=specCol, lwd = 2, lty = 5);
