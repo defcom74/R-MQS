@@ -1,5 +1,6 @@
 cpkHistogram <- function(myData, LowLimit, HiLimit, sTitle, specCol = "red"){
   objHist <- hist(myData, plot = FALSE);
+  auxTitle <- as.character(sTitle);
   par(bg="white");
   
   
@@ -7,10 +8,10 @@ cpkHistogram <- function(myData, LowLimit, HiLimit, sTitle, specCol = "red"){
   xLim <- xLim + diff(xLim) * c(-0.2, 0.2);
   xFit <- seq(min(xLim), max(xLim), length = 200);
   yFit <- dnorm(xFit, mean = mean(myData), sd = sd(myData));
-  yLim <- range(objHist$counts);
+  yLim <- range(objHist$counts, yLim);
   yLim <- yLim + diff(yLim) * c(-0.1,   0.3);
   
-  hist(myData, xlim = xLim, ylim = yLim,  main = paste( sTitle) , col="lightblue",  
+  hist(myData, xlim = xLim, ylim = yLim,  main = auxTitle , col="lightblue",  
        xlab= "", ylab="");
   lines(xFit, yFit, col = "blue", lwd = 2);
   abline(v = LowLimit, col=specCol, lwd = 2, lty = 5);
