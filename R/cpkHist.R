@@ -7,8 +7,8 @@ cpkHistogram <- function(myData, LowLimit, HiLimit, sTitle, specCol = "red"){
   xLim <- xLim + diff(xLim) * c(-0.2, 0.2);
   xFit <- seq(min(xLim), max(xLim), length = 200);
   yFit <- dnorm(xFit, mean = mean(myData), sd = sd(myData));
-  yLim <- range(objHist$density);
-  yLim <- yLim + diff(yLim) * c(-0.1,   0.3);
+  yLim <- range(objHist$counts);
+  yLim <- yLim + diff(yLim) * c(-0.1,   1);
   
   hist(myData, xlim = xLim, ylim = yLim,  main = paste( sTitle) , col="lightblue",  
        xlab= "", ylab="");
