@@ -11,8 +11,8 @@ cpkHistogram <- function(myData, LowLimit, HiLimit, sTitle, specCol = "red"){
   yLim <- range(objHist$counts, yFit);
   yLim <- yLim + diff(yLim) * c(-0.1,   0.3);
   
-  hist(myData, xlim = xLim, ylim = yLim,  main = auxTitle , col="lightblue",  
-       xlab= "", ylab="");
+  hist(myData, xlim = xLim, ylim = yLim,  main = "", col="lightblue",  
+       xlab= auxTitle , ylab="");
   lines(xFit, yFit, col = "blue", lwd = 2);
   abline(v = LowLimit, col=specCol, lwd = 2, lty = 5);
   abline(v = HiLimit, col=specCol, lwd = 2, lty = 5);
