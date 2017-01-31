@@ -1,7 +1,7 @@
 OpenCPU App: R-MQS
 -------------------
 
-Simple OpenCPU Application. To install in R:
+PLot the Histogram Chart for a data vector, also calculate the CPK values :
 
     library(devtools)
     

@@ -1,2 +1,3 @@
 export(cpkHistogram)
+export(cpkValues)
 
