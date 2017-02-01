@@ -13,9 +13,7 @@
   
   \item{sTitle}{title for the chart}
 }
-\value{
-  ggplot object.
-}
+\value{ggplot object.}
 \description{
   Creates an area plot of  data.
 }

@@ -13,9 +13,7 @@
   
  
 }
-\value{
-  data
-}
+\value{data}
 \description{
  calculate Max, Min, Average, CPK values from a set of values.
 }
