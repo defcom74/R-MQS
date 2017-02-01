@@ -28,3 +28,21 @@ cpkHistogram <- function(myData, LowLimit, HiLimit, sTitle, specCol = "red"){
   qqPlot(myData, "normal", confbounds = TRUE, 0.5, main = "Q-Q plot", xlab = "", ylab = "",  
                border = "red", bounds.col = "red", bounds.lty = 3)
 }
+
+
+cpkValues <- function(myData, LowLimit, HiLimit){
+  results <- cp(myData, "normal", LowLimit, HiLimit, false);
+  vMin <- min(myData);
+  vMax <- max(myData);
+  vSd <- sd(myData);
+  vCount <- length(myData);
+  vAverage <- mean(myData)
+  vAveP6 <- vAverage + 6 * vSd;
+  vAveM6 <- vAverage + 6 * vSd;
+  
+  print(results);
+  print(vMax);
+  print(vMin);
+  
+  
+}
