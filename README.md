@@ -3,8 +3,13 @@ OpenCPU App: R-MQS
 
 PLot the Histogram Chart for a data vector, also calculate the CPK values :
 
-    library(devtools)
+
+    #load the docker container
+    #eter to the docker container
+    docker exec -it <conteiner> bash
     
+    #In R
+    library(devtools)
     install_github("defcom74/R-MQS")
 
     #load the app
